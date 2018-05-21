@@ -1,0 +1,31 @@
+// closures => acceder a variables que estan en funciones superiores o externas
+
+// * funciones recientes con "arrow function"
+const saludarFlia = (apellido) => saludarAlguien = (nombre) => console.log(`Hola ${nombre} ${apellido}`)
+const saludarPrieto = saludarFlia("Prieto")
+const saludarGomez = saludarFlia("Gomez")
+
+
+// * funciones recientes
+// function saludarFlia(apellido){
+// 	return function saludarAlguien(nombre){
+// 	console.log(`Hola ${nombre} ${apellido}`)
+// 	}
+// }
+// const saludarPrieto = saludarFlia("Prieto")
+// const saludarGomez = saludarFlia("Gomez")
+
+
+// * funciones anticuadas
+// function saludarFlia(nombre){
+// 	console.log(`Hola ${nombre} Prieto`)
+// }
+// function saludarFlia2(nombre){
+// 	console.log(`Hola ${nombre} Gomez`)
+// }
+
+// Llamado con variables
+saludarPrieto("Sergio")
+saludarPrieto("Ivan")
+saludarGomez("Simona")
+saludarGomez("Ramona")
