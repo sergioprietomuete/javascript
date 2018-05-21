@@ -1,0 +1,3 @@
+// .filter => Ejecuta una accion en cada elemento del array
+const pares = (...num) => num.filter(numeros => numeros % 2 == 0)
+pares(4, 8, 12, 8954, 7)
